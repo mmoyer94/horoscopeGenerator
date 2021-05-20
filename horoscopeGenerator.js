@@ -1,9 +1,20 @@
+const getHoroscope = (birthMonth, birthDate) => {
+
+    return {
+        
+        zodiacSign: zodiacSign,
+        
+        currentFortune: currentFortune,
+        
+        futureOutlook: futureOutlook,
+    
 
 
 const getZodiacSign = (birthMonth, birthDate) => {
 
     if (birthMonth == 'January' && birthDate >= 20 && birthDate <= 31 || birthMonth == 'February' && birthDate > 0 && birthDate <= 18) {
-        return "Aquarius";
+        "Aquarius";
+        return this.zodiacsign;
     }
     else if (birthMonth == 'February' && birthDate >= 19 && birthDate <= 29 || birthMonth == 'March' && birthDate > 0 && birthDate < 20) {
         return "Pisces";
@@ -38,7 +49,10 @@ const getZodiacSign = (birthMonth, birthDate) => {
     else if (birthMonth == 'December' && birthDate >= 22 && birthDate <= 31 || birthMonth == 'January' && birthDate > 0 && birthDate <= 19) {
         return "Capricorn";
     } else {return "Error!"};
+
+    }
+  }
 } 
 
+console.log(getZodiacSign('January', 21));
 
-  
