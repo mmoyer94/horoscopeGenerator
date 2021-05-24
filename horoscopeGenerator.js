@@ -39,18 +39,17 @@ const getZodiacSign = (birthMonth, birthDate) => {
 
     }
   
-const getRandomFortune() {
-    currentOutlookMessageArray = ['You are having good luck','You are going through a tough time', 'You are in limbo', 'You feel restless','You are hopeful','Your sense of hope is waning','You feel emotionally exhausted','You are excited about an upcoming opportunity'];
-    futureOutlookMessageArray = ['There are happier times ahead, keep pushing forward', 'There is trouble ahead, beware', 'You will be tested, but you will overcome', 'If you do not correct course, you will suffer for it in the future', 'Your future goal is attainable, keep working', 'Life will soon get tough, but once the storm has passed, clear skies ahead' ];
+    let currentOutlookArray = ['You are having good luck','You are going through a tough time', 'You are in limbo', 'You feel restless','You are hopeful','Your sense of hope is waning','You feel emotionally exhausted','You are excited about an upcoming opportunity'];
+    let futureOutlookArray = ['There are happier times ahead, keep pushing forward', 'There is trouble ahead, beware', 'You will be tested, but you will overcome', 'If you do not correct course, you will suffer for it in the future', 'Your future goal is attainable, keep working', 'Life will soon get tough, but once the storm has passed, clear skies ahead' ];
+  
 
-    return {
-        currentOutlookMessageArray[i * Math.floor(Math.random() * 8)];
-        futureOutlookMeesageArray[i * Math.floor(Math.random() * 7)]
-    }
-}
+
  
 
 let testHoroscope = getZodiacSign('January', 23);
 
 console.log(testHoroscope);
-console.log(getRandomFortune);
+
+console.log(currentOutlookArray[Math.floor(Math.random() * currentOutlookArray.length)]);
+console.log(futureOutlookArray[Math.floor(Math.random() * futureOutlookArray.length)]);
+
