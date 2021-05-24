@@ -50,8 +50,5 @@ const horoscopeOutlook = {
 
  
 
-let testHoroscope = getZodiacSign('January', 23);
 
-console.log(testHoroscope);
 
-console.log(horoscopeOutlook);
