@@ -47,8 +47,3 @@ const horoscopeOutlook = {
     currentOutlook: currentOutlookArray[Math.floor(Math.random() * currentOutlookArray.length)],
     futureOutlook: futureOutlookArray[Math.floor(Math.random() * futureOutlookArray.length)],
 };
-
- 
-
-
-
